@@ -1,0 +1,13 @@
+Task 2 – 1000/1000
+  • Planner cost: 387
+  • Plan steps issued: 57
+  • Plan completion: turn 80
+  • Scenario run limit reached at turn 249 (includes idle time)
+  • Delivered: gold=1000, wood=1000
+
+Task 2 – 3000/2000
+  • Planner cost: 792
+  • Plan steps issued: 106
+  • Plan completion: turn 106
+  • Scenario run limit reached at turn 596 (includes idle time)
+  • Delivered: gold=3000, wood=2000

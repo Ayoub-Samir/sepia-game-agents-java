@@ -1,0 +1,1 @@
+Task 1 snapshot (200/200 and 1000/1000 goals)\nSource: src/edu/cwru/sepia/agent/planner\nConfigs: data/midasConfig*.xml\nCompile: javac -cp lib/Sepia.jar -d bin src/...\nRun: java -cp bin;lib/Sepia.jar edu.cwru.sepia.Main2 data/midasConfig.xml

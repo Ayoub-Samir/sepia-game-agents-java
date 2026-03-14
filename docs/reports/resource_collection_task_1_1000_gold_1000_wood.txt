@@ -1,0 +1,109 @@
+# Resource Collection 1 (Task 1) — 1000 Gold / 1000 Wood
+
+## Planner
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.agent.planner.PlannerApp 1000 1000
+
+Output:
+  - Plan cost (estimated makespan): 498
+  - Steps (first few shown; total 80):
+    Issuing step 1: Move to GoldMineNear
+    Issuing step 2: Harvest gold from GoldMineNear
+    Issuing step 3: Move to TownHall
+    Issuing step 4: Deposit carried gold
+    Issuing step 5: Move to ForestWest
+    Issuing step 6: Harvest wood from ForestWest
+    Issuing step 7: Move to TownHall
+    Issuing step 8: Deposit carried wood
+    Issuing step 9: Move to ForestWest
+    Issuing step 10: Harvest wood from ForestWest
+    Issuing step 11: Move to TownHall
+    Issuing step 12: Deposit carried wood
+    Issuing step 13: Move to ForestWest
+    Issuing step 14: Harvest wood from ForestWest
+    Issuing step 15: Move to TownHall
+    Issuing step 16: Deposit carried wood
+    Issuing step 17: Move to ForestWest
+    Issuing step 18: Harvest wood from ForestWest
+    Issuing step 19: Move to TownHall
+    Issuing step 20: Deposit carried wood
+    Issuing step 21: Move to ForestSouth
+    Issuing step 22: Harvest wood from ForestSouth
+    Issuing step 23: Move to TownHall
+    Issuing step 24: Deposit carried wood
+    Issuing step 25: Move to ForestSouth
+    Issuing step 26: Harvest wood from ForestSouth
+    Issuing step 27: Move to TownHall
+    Issuing step 28: Deposit carried wood
+    Issuing step 29: Move to ForestSouth
+    Issuing step 30: Harvest wood from ForestSouth
+    Issuing step 31: Move to TownHall
+    Issuing step 32: Deposit carried wood
+    Issuing step 33: Move to ForestSouth
+    Issuing step 34: Harvest wood from ForestSouth
+    Issuing step 35: Move to TownHall
+    Issuing step 36: Deposit carried wood
+    Issuing step 37: Move to ForestEast
+    Issuing step 38: Harvest wood from ForestEast
+    Issuing step 39: Move to TownHall
+    Issuing step 40: Deposit carried wood
+    Issuing step 41: Move to ForestEast
+    Issuing step 42: Harvest wood from ForestEast
+    Issuing step 43: Move to TownHall
+    Issuing step 44: Deposit carried wood
+    Issuing step 45: Move to GoldMineMiddle
+    Issuing step 46: Harvest gold from GoldMineMiddle
+    Issuing step 47: Move to TownHall
+    Issuing step 48: Deposit carried gold
+    Issuing step 49: Move to GoldMineMiddle
+    Issuing step 50: Harvest gold from GoldMineMiddle
+    Issuing step 51: Move to TownHall
+    Issuing step 52: Deposit carried gold
+    Issuing step 53: Move to GoldMineMiddle
+    Issuing step 54: Harvest gold from GoldMineMiddle
+    Issuing step 55: Move to TownHall
+    Issuing step 56: Deposit carried gold
+    Issuing step 57: Move to GoldMineMiddle
+    Issuing step 58: Harvest gold from GoldMineMiddle
+    Issuing step 59: Move to TownHall
+    Issuing step 60: Deposit carried gold
+    Issuing step 61: Move to GoldMineMiddle
+    Issuing step 62: Harvest gold from GoldMineMiddle
+    Issuing step 63: Move to TownHall
+    Issuing step 64: Deposit carried gold
+    Issuing step 65: Move to GoldMineFar
+    Issuing step 66: Harvest gold from GoldMineFar
+    Issuing step 67: Move to TownHall
+    Issuing step 68: Deposit carried gold
+    Issuing step 69: Move to GoldMineFar
+    Issuing step 70: Harvest gold from GoldMineFar
+    Issuing step 71: Move to TownHall
+    Issuing step 72: Deposit carried gold
+    Issuing step 73: Move to GoldMineFar
+    Issuing step 74: Harvest gold from GoldMineFar
+    Issuing step 75: Move to TownHall
+    Issuing step 76: Deposit carried gold
+    Issuing step 77: Move to GoldMineFar
+    Issuing step 78: Harvest gold from GoldMineFar
+    Issuing step 79: Move to TownHall
+    Issuing step 80: Deposit carried gold
+
+Key results:
+  - Issued 80 plan steps
+  - Total environment steps elapsed: 600 (sim end)
+  - Plan finished after: 80 environment steps (# of turn in the env)
+  - Delivered resources: gold = 1000, wood = 1000
+  - Plan executed successfully
+
+## Execution (non-visual)
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.Main2 data/midasConfig_1000.xml
+
+## Execution (visual)
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.Main2 data/midasConfig_1000_visual.xml
+
+Notes:
+  - Same 80-step plan runs in the VisualAgent window.(there was an issue I couldn't solve with the GUI specially in this task)
+
+

@@ -1,0 +1,84 @@
+# Resource Collection 2 (Task 2) — 1000 Gold / 1000 Wood
+
+## Planner
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.agent.planner.PlannerApp 1000 1000
+
+Output:
+  - Plan cost (estimated makespan): 387
+  - Steps:
+    1. Move x1 NONE from TownHall to GoldMineNear
+    2. Harvest gold x1 at GoldMineNear
+    3. Move x1 GOLD from GoldMineNear to TownHall
+    4. Deposit gold x1 at town hall
+    5. Move x1 NONE from TownHall to GoldMineMiddle
+    6. Harvest gold x1 at GoldMineMiddle
+    7. Move x1 GOLD from GoldMineMiddle to TownHall
+    8. Deposit gold x1 at town hall
+    9. Move x1 NONE from TownHall to GoldMineMiddle
+    10. Harvest gold x1 at GoldMineMiddle
+    11. Move x1 GOLD from GoldMineMiddle to TownHall
+    12. Deposit gold x1 at town hall
+    13. Move x1 NONE from TownHall to GoldMineMiddle
+    14. Harvest gold x1 at GoldMineMiddle
+    15. Move x1 GOLD from GoldMineMiddle to TownHall
+    16. Deposit gold x1 at town hall
+    17. Build peasant at town hall
+    18. Move x2 NONE from TownHall to ForestWest
+    19. Harvest wood x2 at ForestWest
+    20. Move x2 WOOD from ForestWest to TownHall
+    21. Deposit wood x2 at town hall
+    22. Move x2 NONE from TownHall to GoldMineMiddle
+    23. Harvest gold x2 at GoldMineMiddle
+    24. Move x2 GOLD from GoldMineMiddle to TownHall
+    25. Deposit gold x2 at town hall
+    26. Move x2 NONE from TownHall to ForestWest
+    27. Harvest wood x2 at ForestWest
+    28. Move x2 WOOD from ForestWest to TownHall
+    29. Deposit wood x2 at town hall
+    30. Move x2 NONE from TownHall to ForestSouth
+    31. Harvest wood x2 at ForestSouth
+    32. Move x2 WOOD from ForestSouth to TownHall
+    33. Deposit wood x2 at town hall
+    34. Move x2 NONE from TownHall to ForestSouth
+    35. Harvest wood x2 at ForestSouth
+    36. Move x2 WOOD from ForestSouth to TownHall
+    37. Deposit wood x2 at town hall
+    38. Move x2 NONE from TownHall to ForestEast
+    39. Harvest wood x2 at ForestEast
+    40. Move x2 WOOD from ForestEast to TownHall
+    41. Deposit wood x2 at town hall
+    42. Move x2 NONE from TownHall to GoldMineFar
+    43. Harvest gold x2 at GoldMineFar
+    44. Move x2 GOLD from GoldMineFar to TownHall
+    45. Deposit gold x2 at town hall
+    46. Move x2 NONE from TownHall to GoldMineFar
+    47. Harvest gold x2 at GoldMineFar
+    48. Move x2 GOLD from GoldMineFar to TownHall
+    49. Deposit gold x2 at town hall
+    50. Move x2 NONE from TownHall to GoldMineFar
+    51. Harvest gold x2 at GoldMineFar
+    52. Move x2 GOLD from GoldMineFar to TownHall
+    53. Deposit gold x2 at town hall
+    54. Move x2 NONE from TownHall to GoldMineFar
+    55. Harvest gold x2 at GoldMineFar
+    56. Move x2 GOLD from GoldMineFar to TownHall
+    57. Deposit gold x2 at town hall
+
+## Execution (non-visual)
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.Main2 data/midasConfig_1000.xml
+
+Key results:
+  - Issued 57 plan steps
+  - Plan finished after: 249 environment steps (# of turn in the env)
+  - Delivered resources: gold = 1000, wood = 1000
+  - Plan executed successfully
+
+## Execution (visual)
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.Main2 data/midasConfig_1000_visual.xml
+
+Notes:
+  - Same 57-step plan runs with the VisualAgent showing two peasants paralleling gather/deposit trips after the build.
+

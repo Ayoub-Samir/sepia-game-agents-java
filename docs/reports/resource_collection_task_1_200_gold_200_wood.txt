@@ -1,0 +1,44 @@
+# Resource Collection 1 (Task 1) — 200 Gold / 200 Wood
+
+## Planner
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.agent.planner.PlannerApp 200 200
+
+Output:
+  - Plan cost (estimated makespan): 74
+  - Steps:
+    1. Move to GoldMineNear
+    2. Harvest gold from GoldMineNear
+    3. Move to TownHall
+    4. Deposit carried gold at the town hall
+    5. Move to ForestWest
+    6. Harvest wood from ForestWest
+    7. Move to TownHall
+    8. Deposit carried wood at the town hall
+    9. Move to ForestWest
+    10. Harvest wood from ForestWest
+    11. Move to TownHall
+    12. Deposit carried wood at the town hall
+    13. Move to GoldMineMiddle
+    14. Harvest gold from GoldMineMiddle
+    15. Move to TownHall
+    16. Deposit carried gold at the town hall
+
+Key results:
+  - Issued 16 plan steps
+  - Total environment steps elapsed: 120 (sim end)
+  - Plan finished after: 16 environment steps (# of turn in the env)
+  - Delivered resources: gold = 200, wood = 200
+  - Plan executed successfully
+
+## Execution (non-visual)
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.Main2 data/midasConfig.xml
+
+## Execution (visual)
+Command:
+  java -cp "bin;lib/Sepia.jar" edu.cwru.sepia.Main2 data/midasConfig_visual.xml
+
+Notes:
+  - Same 16-step plan; GUI shows peasant executing the sequence. (there was an issue I couldn't solve with the GUI specially in this task)
+

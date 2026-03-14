@@ -1,0 +1,9 @@
+.settings/
+.idea/
+.vscode/
+build/
+bin/
+out/
+saves/
+*.log
+local_artifacts/
