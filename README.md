@@ -57,6 +57,3 @@ The official online documentation is available at [http://engr.case.edu/ray_soum
 
 ## Notes
 
-- The original course-submission folders were reorganized into cleaner project-centric directories.
-- Demo videos were preserved locally under `local_artifacts/demo_videos`, but they are ignored by git because one file exceeds GitHub's normal 100 MB file limit.
-- Build output directories such as `build/` and `saves/` are intentionally not tracked.
